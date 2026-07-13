@@ -9,3 +9,8 @@ Le routes sono come mappe che mostrano come i dati transitano da un sistema all'
 soprattutto in quei contesti in cui occorre far comunicare sistemi con stack tecnologici diversi
 
 ![ENTERPRISE INTEGRATION PATTERNS](image.png)
+
+
+## Risorse EIP 
+https://www.enterpriseintegrationpatterns.com/
+https://camel.apache.org/components/4.18.x/eips/enterprise-integration-patterns.html
