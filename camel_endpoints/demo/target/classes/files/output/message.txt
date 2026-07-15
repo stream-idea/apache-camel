@@ -1,0 +1,4 @@
+{
+    "content": "ciao",
+    "outFolder":"bye"
+}

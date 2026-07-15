@@ -1,0 +1,4 @@
+com\camel\bean\FileFilter.class
+com\camel\Main.class
+com\camel\routes\DynamicFileRoute.class
+com\camel\routes\StaticFileRoute.class
