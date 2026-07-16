@@ -7,6 +7,7 @@ public class JsonFileFilter implements GenericFileFilter {
 
     @Override
     public boolean accept(GenericFile file) {
+        // this filter accepts only .json files
         return file.getFileName().endsWith(".json");
 
     }

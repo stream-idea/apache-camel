@@ -7,6 +7,7 @@ public class FileFilter implements GenericFileFilter {
 
     @Override
     public boolean accept(GenericFile file) {
+        // this filter will accept only .txt files
         return file.getFileName().endsWith(".txt");
 
     }
