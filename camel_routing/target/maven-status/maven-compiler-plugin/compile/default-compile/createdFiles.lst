@@ -1,0 +1,4 @@
+com\camel\Main.class
+com\camel\route\ChoiceRoute.class
+com\camel\route\RecipientListRoute.class
+com\camel\route\RecipientListRoute$1.class

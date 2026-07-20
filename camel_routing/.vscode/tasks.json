@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks":  [
+        {
+            "label": "Maven Build and Resolve (Tests Skipped)",
+            "type": "shell",
+            "command": "mvn clean install -DskipTests=true && mvn dependency:resolve",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Maven Dependecy tree",
+            "type": "shell",
+            "command": "mvn dependency:tree",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        }
+    ]
+}
