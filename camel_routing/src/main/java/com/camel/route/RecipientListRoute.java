@@ -19,14 +19,18 @@ public class RecipientListRoute extends RouteBuilder {
 
                     Optional.ofNullable(departments)
                             .ifPresent(d -> Arrays.asList(d.toString().split(","))
-                                    .forEach(dept -> targets.add(String.format(
-                                            "jms:%s.queue", dept.trim()))));
+                                    .forEach(dept -> targets.add(formatTarget(dept))));
 
                     exchange.getMessage().setHeader("whereToSend", targets);
 
                 })
                 .recipientList(header("whereToSend"))
                 .log("End Routing");
+    }
+
+    private String formatTarget(String dept) {
+        return String.format(
+                "jms:%s.queue", dept.trim());
     }
 
 }
