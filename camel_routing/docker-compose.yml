@@ -1,0 +1,9 @@
+# execute using: docker-compose up -d
+services:
+  broker_for_camel:
+    image: apache/artemis:latest-alpine
+    container_name: broker_for_camel
+    ports:
+      - "61616:61616"
+      - "8161:8161"
+    restart: "no"
