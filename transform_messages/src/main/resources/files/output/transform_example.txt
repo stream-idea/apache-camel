@@ -1,0 +1,1 @@
+<request>bye my friend! This is an example request</request>
